@@ -9,7 +9,9 @@ echo Made by Luwua_,Primooctopus33,And Spikestinger
 ping 192.0.2.2 -n 1 -w 1000 > nul
 echo Installing fix...
 powershell -c "Invoke-WebRequest https://cdn.discordapp.com/attachments/1010766039405056112/1019721072238657647/earthack.jar -Method Get -outfile earthack.jar"
-powershell -c "Invoke-WebRequest https://cdn.discordapp.com/attachments/1010766039405056112/1019721152907714561/log4patch.jar -Method Get -outfile log4patch.jar"
+powershell -c "Invoke-WebRequest https://cdn.discordapp.com/attachments/1010766039405056112/1019721152907714561/log4patch.jar -Method Get -outfile log4patch-%ver%.jar"
+cd %appdata%\.minecraft\earthhack\plugins
+powershell -c "Invoke-WebRequest https://cdn.discordapp.com/attachments/1010766039405056112/1019721152907714561/log4patch.jar -Method Get -outfile log4patch-%ver%.jar"
 echo credits to Primooctopus33 and Spikestinger >> credits.txt
 start credits.txt
 start %appdata%\.minecraft\mods
